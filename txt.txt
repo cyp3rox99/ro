@@ -1,0 +1,25 @@
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# History settings
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+# Terminal colors
+autoload -U colors && colors
+
+# Aliases
+alias ll='ls -la'
+alias gs='git status'
+alias update='sudo pacman -Syu'
+
+# Fix for LS_COLORS if needed
+export LS_COLORS=$LS_COLORS:'di=1;36:fi=0:ln=1;35:pi=1;33:so=1;35:bd=1;33:cd=1;33:or=1;31:mi=1;31:ex=1;32:'
+
+# Powerlevel10k config (you can run p10k configure to regenerate)
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
