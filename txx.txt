@@ -1,0 +1,17 @@
+# إخفاء KDevelop
+sudo sed -i '/^\[Desktop Entry\]/a NoDisplay=true' /usr/share/applications/kdevelop.desktop
+
+# إخفاء Cervisia
+sudo sed -i '/^\[Desktop Entry\]/a NoDisplay=true' /usr/share/applications/org.kde.cervisia.desktop
+
+# إخفاء Kirigami Gallery
+sudo sed -i '/^\[Desktop Entry\]/a NoDisplay=true' /usr/share/applications/org.kde.kirigamigallery.desktop
+
+# إخفاء Plasma Engine Explorer
+sudo sed -i '/^\[Desktop Entry\]/a NoDisplay=true' /usr/share/applications/plasmaengineexplorer.desktop
+
+# إخفاء Plasma Global Theme Explorer
+sudo sed -i '/^\[Desktop Entry\]/a NoDisplay=true' /usr/share/applications/plasmathemeexplorer.desktop
+
+# إخفاء Plasma Theme Explorer (لو كان له ملف خاص)
+sudo sed -i '/^\[Desktop Entry\]/a NoDisplay=true' /usr/share/applications/plasmathemeexplorer.desktop
